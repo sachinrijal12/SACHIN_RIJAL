@@ -1,0 +1,165 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact - Sachin Rijal</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <header>
+        <div class="container">
+            <nav>
+                <div class="logo">
+                    <a href="index.html">Sachin<span>Rijal</span></a>
+                </div>
+                <ul class="nav-links">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="skills.html">Skills</a></li>
+                    <li><a href="projects.html">Projects</a></li>
+                    <li><a href="contact.html" class="active">Contact</a></li>
+                </ul>
+                <div class="hamburger">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+            </nav>
+        </div>
+        <div class="nav-overlay"></div>
+    </header>
+
+    <main>
+        <section class="page-header">
+            <div class="page-floating-elements">
+                <div class="page-floating-element"></div>
+                <div class="page-floating-element"></div>
+                <div class="page-floating-element"></div>
+            </div>
+            <div class="container">
+                <h1>Contact Me</h1>
+                <p>Let's connect and discuss MERN stack development</p>
+            </div>
+        </section>
+
+        <section class="contact-content">
+            <div class="container">
+                <div class="contact-grid">
+                    <div class="contact-info">
+                        <h2>Let's Connect</h2>
+                        <p>I'm open to discussing learning opportunities, collaboration on projects, or any tech-related
+                            queries.</p>
+
+                        <div class="email-copy hover-lift fade-in">
+                            <h4>📧 Email Address</h4>
+                            <div class="email-address">
+                                <span class="email-text">rijalsachin58@gmail.com</span>
+                                <button class="copy-btn" id="copyEmailBtn">
+                                    <i class="fas fa-copy"></i> Copy Email
+                                </button>
+                            </div>
+                        </div>
+
+                        <div class="contact-methods">
+                            <div class="contact-method hover-lift fade-in whatsapp">
+                                <div class="contact-method-icon"><i class="fab fa-whatsapp"></i></div>
+                                <h4>WhatsApp</h4>
+                                <p>Quick responses via WhatsApp</p>
+                                <a href="https://wa.me/9779765870064?text=Hi%20Sachin,%20I%20saw%20your%20portfolio"
+                                    class="whatsapp-link" target="_blank">
+                                    <i class="fab fa-whatsapp"></i> Message on WhatsApp
+                                </a>
+                            </div>
+
+                            <div class="contact-method hover-lift fade-in call">
+                                <div class="contact-method-icon"><i class="fas fa-phone"></i></div>
+                                <h4>Call Directly</h4>
+                                <p>For urgent matters</p>
+                                <a href="tel:+9779765870064" class="call-link">
+                                    <i class="fas fa-phone"></i> Call Now
+                                </a>
+                            </div>
+                        </div>
+
+                        <div class="social-contact hover-lift fade-in">
+                            <h3>Follow Me</h3>
+                            <div class="social-grid">
+                                <a href="https://www.linkedin.com/in/sachin-rijal-b35164354"
+                                    class="social-link linkedin" target="_blank">
+                                    <i class="fab fa-linkedin-in"></i>
+                                    <span>LinkedIn</span>
+                                </a>
+                                <a href="https://www.instagram.com/sac__hin_09" class="social-link instagram"
+                                    target="_blank">
+                                    <i class="fab fa-instagram"></i>
+                                    <span>Instagram</span>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="contact-form-container hover-lift fade-in">
+                        <form id="contactForm" class="contact-form">
+                            <div id="formStatus" class="form-status"></div>
+
+                            <div class="form-group">
+                                <label for="name">Full Name *</label>
+                                <input type="text" id="name" name="name" placeholder="Enter your full name" required>
+                            </div>
+
+                            <div class="form-group">
+                                <label for="email">Email Address *</label>
+                                <input type="email" id="email" name="email" placeholder="Enter your email address"
+                                    required>
+                            </div>
+
+                            <div class="form-group">
+                                <label for="subject">Subject *</label>
+                                <input type="text" id="subject" name="subject" placeholder="What is this regarding?"
+                                    required>
+                            </div>
+
+                            <div class="form-group">
+                                <label for="message">Message *</label>
+                                <textarea id="message" name="message" rows="5" placeholder="Write your message here..."
+                                    required></textarea>
+                            </div>
+
+                            <button type="submit" class="btn primary" id="submitBtn">
+                                <i class="fas fa-paper-plane"></i> Send Message
+                            </button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="floating-elements">
+            <div class="floating-element"></div>
+            <div class="floating-element"></div>
+            <div class="floating-element"></div>
+        </div>
+        <div class="container">
+            <div class="footer-content">
+                <p>&copy; 2025 Sachin Rijal | MERN Stack Developer</p>
+                <div class="social-links">
+                    <a href="https://www.linkedin.com/in/sachin-rijal-b35164354" target="_blank"><i
+                            class="fab fa-linkedin-in"></i></a>
+                    <a href="https://www.instagram.com/sac__hin_09" target="_blank"><i class="fab fa-instagram"></i></a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
